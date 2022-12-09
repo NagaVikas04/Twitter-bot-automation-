@@ -7,8 +7,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 from time import sleep
 
-email = "nagavikas@yahoo.com"
-password = "Vicky@1999"
+email = "YOUR TWITTER EMAIL HERE"
+password = "YOUR TWITTER PASSWORD"
 
 Edge_driver_path = r"C:\Users\nagav\EdgeDriver\edgedriver_win64\msedgedriver.exe"
 service = Service(executable_path=Edge_driver_path)
@@ -60,7 +60,7 @@ class InternetSpeedTwitterBot:
         sleep(1)
         try:
             user_name_input = self.driver.find_element(By.NAME, "text")
-            user_name_input.send_keys("@vikas_nagavikas")
+            user_name_input.send_keys("YOUR TWITTER USER NAME")
             user_name_input.send_keys(Keys.ENTER)
             time.sleep(2)
 
